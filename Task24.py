@@ -12,3 +12,8 @@ for i in range(len(bushes)-1):
 collect_berries.append(bushes[len(bushes)-2]+bushes[len(bushes)-1]+bushes[0])
 print(f"Возможные варианты сбора: {collect_berries}")
 
+max_collect = collect_berries[0]
+for i in collect_berries:
+    if i > max_collect:
+        max_collect = i
+print(f"Максимально число ягод которое можно собрать: {max_collect}")
